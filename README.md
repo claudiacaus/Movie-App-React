@@ -1,4 +1,4 @@
-# Movie-App-React
+# Movie-App-React :film_projector:
 React project for the HackYourFuture - Amsterdam Bootcamp
 
 ![inspiraton](https://user-images.githubusercontent.com/55986532/142338736-baa8adda-f193-49c7-af2e-7af390290fa2.png)
@@ -7,11 +7,11 @@ Inspired by [Arshia Amin Javahery](https://dribbble.com/shots/16852940/attachmen
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Demo
+### Demo :computer:
 
 Online Deployment of this project is available at...
 
-### Getting Started
+### Getting Started :clapper:
 
 To get started you can simply clone the repo and install the dependencies in the root folder, it's necessary to create a .env file in the root and add your personal API key for the [TMDB](https://www.themoviedb.org/).
 
@@ -23,7 +23,7 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
 | Start   |`npm start`                        |
 | Tests   |`npm test`                         |
 
-### Directory Layout and Tree
+### Directory Layout and Tree :film_strip:
 
 ```
 .
@@ -70,7 +70,7 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
           |     | 
        
  ```
- ## Project Requirements
+ ## Project Requirements :vhs:
  
  ### Must Have
 - [ ] The app needs to have multiple pages and use client-side routing
