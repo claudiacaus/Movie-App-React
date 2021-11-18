@@ -78,6 +78,8 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
 - [ ] Make use of an API
 - [ ] User login
 - [ ] Search form 
+- [ ] Full responsive 
+- [ ] Implemented mobile first
 ### Nice to have
 - [ ] Add user review
 - [ ] Tests for the UI
