@@ -7,11 +7,11 @@ Inspired by [Arshia Amin Javahery](https://dribbble.com/shots/16852940/attachmen
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Demo :computer:
+## Demo :computer:
 
 Online Deployment of this project is available at...
 
-### Getting Started :clapper:
+## Getting Started :clapper:
 
 To get started you can simply clone the repo and install the dependencies in the root folder, it's necessary to create a .env file in the root and add your personal API key for the [TMDB](https://www.themoviedb.org/).
 
@@ -23,7 +23,7 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
 | Start   |`npm start`                        |
 | Tests   |`npm test`                         |
 
-### Directory Layout and Tree :film_strip:
+## Directory Layout and Tree :film_strip:
 
 ```
 .
