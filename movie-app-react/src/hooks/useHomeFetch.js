@@ -11,11 +11,10 @@ const initialState = {
 
 export const useHomeFetch = () => {
   const [searchTerm, setSearchTerm] = useState('');
-  const [state, setState] = useState(initialState);
+  const [state, setState] = useState(initialState); // state is the data that we are fetching from the API
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
-
-  console.log(searchTerm);
+  const [isLoadingMore, setIsLoadingMore] = useState(false);
 
   const fetchMovies = async (page, searchTerm = '') => {
     try {
@@ -37,10 +36,19 @@ export const useHomeFetch = () => {
     setLoading(false);
   };
 
-  // will run on the first render, and then every time the page is refreshed
+  // Initial and search. Will run on the first render, and then every time the page is refreshed
   useEffect(() => {
-    fetchMovies(1);
-  }, []);
+    setState(initialState);
+    fetchMovies(1, searchTerm); // 1st page and searchTerm
+  }, [searchTerm]);
 
-  return { state, loading, error, setSearchTerm };
+  // Loading more movies, when clicking on the button
+  useEffect(() => {
+    if (!isLoadingMore) return;
+
+    fetchMovies(state.page + 1, searchTerm); // next page
+    setIsLoadingMore(false); // reset
+  }, [isLoadingMore, searchTerm, state.page]); // always specify the dependencies
+
+  return { state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore };
 };
