@@ -6,13 +6,12 @@ export const Wrapper = styled.div`
       rgba(0, 0, 0, 0) 41%,
       rgba(0, 0, 0, 0.65) 100%
     ),
-    url(${({ image }) => image}) var(--darkGrey);
+    url(${({ image }) => image}), var(--darkGrey);
   background-size: 100%, cover;
   background-position: center;
   height: 600px;
   position: relative;
   animation: animateHeroImage 1s;
-
   @keyframes animateHeroImage {
     from {
       opacity: 0;
@@ -37,24 +36,19 @@ export const Text = styled.div`
   margin-right: 20px;
   min-height: 100px;
   color: var(--white);
-
   h1 {
     font-size: var(--fontSuperBig);
-
     @media screen and (max-width: 720px) {
       font-size: var(--fontBig);
     }
-
-    p {
-      font-size: var(--fonMed);
-
-      @media screen and (max-width: 720px) {
-        font-size: var(--fontSmall);
-      }
-    }
-
+  }
+  p {
+    font-size: var(--fontMed);
     @media screen and (max-width: 720px) {
-      max-width: 100px;
+      font-size: var(--fontSmall);
     }
+  }
+  @media screen and (max-width: 720px) {
+    max-width: 100%;
   }
 `;
