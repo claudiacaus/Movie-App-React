@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
     url(${({ image }) => image}), var(--darkGrey);
   background-size: 100%, cover;
   background-position: center;
-  height: 600px;
+  height: 700px;
   position: relative;
   animation: animateHeroImage 1s;
   @keyframes animateHeroImage {
