@@ -89,6 +89,7 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
 - PropTypes
 - useState, useEffect, useParams
 - Custom Hooks: useHomeFetch, useMovieFetch
+- Session Storage
 
  ## Project Requirements :vhs:
  
