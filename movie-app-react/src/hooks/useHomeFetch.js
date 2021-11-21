@@ -1,6 +1,8 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 // API
 import API from '../API';
+// Helpers
+import { isPersistedState } from '../helpers';
 
 const initialState = {
   page: 0,
@@ -37,7 +39,19 @@ export const useHomeFetch = () => {
   };
 
   // Initial and search. Will run on the first render, and then every time the page is refreshed
+  // or the search term is changed
   useEffect(() => {
+    if (!searchTerm) {
+      const sessionState = isPersistedState('homeState');
+
+      if (sessionState) {
+        // console.log('Grabbing from the session storage');
+        setState(sessionState);
+        return;
+      }
+    }
+
+    // console.log('Grabbing from API');
     setState(initialState);
     fetchMovies(1, searchTerm); // 1st page and searchTerm
   }, [searchTerm]);
@@ -49,6 +63,13 @@ export const useHomeFetch = () => {
     fetchMovies(state.page + 1, searchTerm); // next page
     setIsLoadingMore(false); // reset
   }, [isLoadingMore, searchTerm, state.page]); // always specify the dependencies
+
+  // Write to sessionStorage
+  useEffect(() => {
+    if (!searchTerm) {
+      sessionStorage.setItem('homeState', JSON.stringify(state)); // write to sessionStorage only if searchTerm is empty (initial state)
+    }
+  }, [state, searchTerm]);
 
   return { state, loading, error, searchTerm, setSearchTerm, setIsLoadingMore };
 };

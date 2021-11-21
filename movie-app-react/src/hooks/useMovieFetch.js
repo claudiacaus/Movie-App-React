@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import API from '../API';
+// Helpers
+import { isPersistedState } from '../helpers';
 
 export const useMovieFetch = (movieId) => {
   const [state, setState] = useState({}); // initial state as an empty object because we don't know what data we'll get back from the API yet
@@ -32,8 +34,21 @@ export const useMovieFetch = (movieId) => {
       }
     };
 
+    const sessionState = isPersistedState(movieId);
+
+    if (sessionState) {
+      setState(sessionState);
+      setLoading(false);
+      return;
+    }
+
     fetchMovie();
   }, [movieId]); // this is the array of dependencies that we want to watch for changes
+
+  // Write to sessionStorage
+  useEffect(() => {
+    sessionStorage.setItem(movieId, JSON.stringify(state)); // write to sessionStorage only if searchTerm is empty (initial state)
+  }, [state, movieId]);
 
   return { state, loading, error };
 };

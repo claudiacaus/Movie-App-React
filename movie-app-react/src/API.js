@@ -8,6 +8,7 @@ import {
   SESSION_ID_URL,
 } from './config';
 
+// method Post request to get request token
 const defaultConfig = {
   method: 'POST',
   headers: {
