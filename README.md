@@ -70,6 +70,26 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
           |     | 
        
  ```
+ 
+### Application
+- ES6 + Features
+- Arrow Functions
+- Template Literals
+- Destructuring Assignment
+- Block-Scoped Variables Let and Const
+- async await with try/catch
+- Spread operator
+- Modules export/import
+- New Built-In Methods
+
+### Libraries/Frameworks
+- react: UI library
+- react-router-dom: The router components of react
+- styled-components
+- PropTypes
+- useState, useEffect, useParams
+- Custom Hooks: useHomeFetch, useMovieFetch
+
  ## Project Requirements :vhs:
  
  ### Must Have
