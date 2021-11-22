@@ -11,10 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     --fontBig: 1.5rem;
     --fontMed: 1.2rem;
     --fontSmall: 1rem;
+    --orange: #ff914d;
   }
   * {
     box-sizing: border-box;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Dosis', sans-serif;
   }
   body {
     margin: 0;
@@ -22,17 +23,21 @@ export const GlobalStyle = createGlobalStyle`
     
     h1 {
       font-size: 2rem;
-      font-weight: 600;
-      color: var(--white);
+      font-weight: 400;
+      color: #FDFBF9;
+      letter-spacing: 0.1rem;
+      font-family: 'Koulen', cursive;
     }
+
     h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 1.2rem;
+      font-weight: 500;
+      letter-spacing: 0.rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.3rem;
       color: var(--white);
-      letter-spacing: 0.07rem;
+      letter-spacing: 0.08rem;
     }
   }
 `;

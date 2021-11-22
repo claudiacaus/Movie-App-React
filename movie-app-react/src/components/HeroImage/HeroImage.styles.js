@@ -30,14 +30,15 @@ export const Content = styled.div`
 
 export const Text = styled.div`
   z-index: 100;
-  max-width: 700px;
+  max-width: 720px;
   position: absolute;
   bottom: 40px;
   margin-right: 20px;
   min-height: 100px;
-  color: var(--white);
+  color: #ff914d;
   h1 {
     font-size: var(--fontSuperBig);
+    text-shadow: 0 4px 0 #282828;
     @media screen and (max-width: 720px) {
       font-size: var(--fontBig);
     }

@@ -3,11 +3,11 @@ import styled from 'styled-components';
 export const Wrapper = styled.button`
   display: block;
   background: var(--darkGrey);
-  width: 25%;
+  width: 10%;
   min-width: 200px;
   height: 60px;
   border-radius: 30px;
-  color: var(--white);
+  color: var(--orange);
   border: none;
   font-size: var(--fontBig);
   margin: 20px auto;

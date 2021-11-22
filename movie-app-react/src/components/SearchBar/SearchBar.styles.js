@@ -10,8 +10,8 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   position: relative;
-  max-width: var(--maxWidth);
-  width: 100%;
+  max-width: 800px;
+  width: 70%;
   height: 55px;
   background: var(--medGrey);
   margin: 0 auto;
@@ -21,8 +21,8 @@ export const Content = styled.div`
   img {
     position: absolute;
     left: 15px;
-    top: 14px;
-    width: 30px;
+    top: 16px;
+    width: 23px;
   }
 
   input {
@@ -35,7 +35,7 @@ export const Content = styled.div`
     width: 95%;
     background: transparent;
     height: 40px;
-    color: var(--white);
+    color: var(--orange);
 
     :focus {
       outline: none;
