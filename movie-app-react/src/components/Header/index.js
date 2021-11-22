@@ -13,7 +13,7 @@ const Header = () => (
         <LogoImg src={Logo} alt="Movie Time Logo" />
       </Link>
 
-      <TMDBLogoImg src={TMDBLogo} alt="TMDb Logo" />
+      <TMDBLogoImg src={TMDBLogo} alt="TMDB Logo" />
     </Content>
   </Wrapper>
 );
