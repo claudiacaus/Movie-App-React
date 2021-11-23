@@ -9,13 +9,17 @@ export const Wrapper = styled.div`
   max-width: 320px;
   padding: 20px;
   color: var(--darkGrey);
+  label {
+    font-size: 1.2rem;
+  }
   input {
     width: 100%;
-    height: 30px;
+    height: 35px;
     border: 1px solid var(--darkGrey);
     border-radius: 20px;
     margin: 10px 0;
     padding: 10px;
+    font-size: 1.2rem;
   }
   .error {
     color: red;
