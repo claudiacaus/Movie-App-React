@@ -21,6 +21,7 @@ export const Content = styled.div`
     background: var(--medGrey);
     border-radius: 20px;
     margin: 0 20px;
+    height: 55px;
     flex: 1;
 
     :first-child {
@@ -35,6 +36,10 @@ export const Content = styled.div`
     display: block;
     .column {
       margin: 20px 0;
+
+      p {
+        font-size: 1.2rem;
+      }
     }
   }
 `;

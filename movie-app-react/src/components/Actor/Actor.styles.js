@@ -14,6 +14,15 @@ export const Wrapper = styled.div`
   p {
     margin: 5px 0;
   }
+
+  @media screen and (max-width: 768px) {
+    h3 {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
 `;
 
 export const Image = styled.img`
@@ -22,4 +31,8 @@ export const Image = styled.img`
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
+
+  @media screen and (max-width: 768px) {
+    height: 170px;
+  }
 `;

@@ -24,11 +24,13 @@ const apiSettings = {
       : `${POPULAR_BASE_URL}&page=${page}`;
     return await (await fetch(endpoint)).json();
   },
+
   // Fetch a single movie
   fetchMovie: async (movieId) => {
     const endpoint = `${API_URL}movie/${movieId}?api_key=${API_KEY}`;
     return await (await fetch(endpoint)).json();
   },
+
   // Fetch movie credits
   fetchCredits: async (movieId) => {
     const creditsEndpoint = `${API_URL}movie/${movieId}/credits?api_key=${API_KEY}`;
@@ -54,6 +56,7 @@ const apiSettings = {
         body: JSON.stringify(bodyData),
       })
     ).json();
+
     // Then get the sessionId with the requestToken
     if (data.success) {
       const sessionId = await (
@@ -65,6 +68,8 @@ const apiSettings = {
       return sessionId;
     }
   },
+
+  // rate movie is async because we need to get the sessionId first and then rate the movie 
   rateMovie: async (sessionId, movieId, value) => {
     const endpoint = `${API_URL}movie/${movieId}/rating?api_key=${API_KEY}&session_id=${sessionId}`;
 
