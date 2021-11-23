@@ -9,7 +9,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Demo :computer:
 
-Online Deployment of this project is available at https://movie-time-react-project.netlify.app/512195
+Online Deployment of this project is available at https://movie-time-react-project.netlify.app
 
 ## Getting Started :clapper:
 
@@ -94,13 +94,13 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
  ## Project Requirements :vhs:
  
  ### Must Have
-- [ ] The app needs to have multiple pages and use client-side routing
-- [ ] The app should make use of the Context API or use custom hooks
-- [ ] Make use of an API
+- [x] The app needs to have multiple pages and use client-side routing
+- [x] The app should make use of the Context API or use custom hooks
+- [x] Make use of an API
 - [ ] User login
-- [ ] Search form 
-- [ ] Full responsive 
-- [ ] Implemented mobile first
+- [x] Search form 
+- [x] Full responsive 
+- [x] Implemented mobile first
 ### Nice to have
 - [ ] Add user review
 - [ ] Tests for the UI
