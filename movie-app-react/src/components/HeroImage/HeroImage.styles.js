@@ -46,7 +46,7 @@ export const Text = styled.div`
   p {
     font-size: var(--fontMed);
     @media screen and (max-width: 720px) {
-      font-size: var(--fontSmall);
+      font-size: 1.1rem;
     }
   }
   @media screen and (max-width: 720px) {

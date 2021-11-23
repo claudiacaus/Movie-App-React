@@ -42,17 +42,18 @@ export const ChildrenContent = styled.div`
 
   @media screen and (max-width: 768px) {
     .login {
-      margin-left: 85px;
-      font-size: 0.8rem;
+      margin-left: 80px;
+      font-size: 0.9rem;
     }
   }
 `;
 
 export const TMDBLogoImg = styled.img`
   width: 60px;
-  margin-left: 20px;
+  margin-left: 15px;
 
-  @media screen and (max-width: 500px) {
+  @media screen and (max-width: 768px) {
     width: 40px;
+    margin-left: 7px;
   }
 `;

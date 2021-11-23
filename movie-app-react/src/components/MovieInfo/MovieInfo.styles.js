@@ -62,4 +62,10 @@ export const Text = styled.div`
       font-size: var(--fontBig);
     }
   }
+
+  p {
+    @media screen and (max-width: 768px) {
+      font-size: var(--fontSmall);
+    }
+  }
 `;
