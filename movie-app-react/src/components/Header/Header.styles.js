@@ -23,9 +23,9 @@ export const LogoImg = styled.img`
 `;
 
 export const TMDBLogoImg = styled.img`
-  width: 100px;
+  width: 60px;
 
   @media screen and (max-width: 500px) {
-    width: 80px;
+    width: 40px;
   }
 `;
