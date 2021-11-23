@@ -16,6 +16,10 @@ import { useHomeFetch } from '../hooks/useHomeFetch';
 
 // Image
 import NoImage from '../images/no_image.jpg';
+import NotFound from '../images/not-found.gif';
+
+// Style
+import { Wrapper, Text, Image } from './Home.styles';
 
 // setSearchTerm is used to create a short delay between the user typing and the search being executed, to create a more fluid experience
 const Home = () => {
@@ -26,15 +30,15 @@ const Home = () => {
 
   return (
     <>
-      {!searchTerm && state.results[0] ? ( // If there is no search term, and there is a result, display the hero image
+      {!searchTerm && state.results[0] ? ( // If there is no search term, and there is a result, display the result
         <HeroImage
           image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
           title={state.results[0].original_title}
           text={state.results[0].overview}
         />
       ) : null}
-
       <SearchBar setSearchTerm={setSearchTerm} />
+
       <Grid header={searchTerm ? 'Search Result' : 'Popular Movies'}>
         {state.results.map((movie) => (
           <Thumb
@@ -49,6 +53,16 @@ const Home = () => {
           />
         ))}
       </Grid>
+
+      {searchTerm && !state.results[0] ? (
+        <Wrapper>
+          <Text>Result not found</Text>
+          <Image>
+            <img src={NotFound} alt="Not Found" />
+          </Image>
+        </Wrapper>
+      ) : null}
+
       {loading && <Spinner />}
       {state.page < state.total_pages && !loading && (
         <Button text="Load More" callback={() => setIsLoadingMore(true)} />

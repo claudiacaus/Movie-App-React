@@ -18,5 +18,6 @@ export const Content = styled.div`
   grid-gap: 2rem;
   @media screen and (max-width: 768px) {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-gap: 1rem;
   }
 `;
