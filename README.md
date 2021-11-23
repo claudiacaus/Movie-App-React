@@ -80,7 +80,7 @@ password: `hackyourfuture`
     |     |
     |     |_____hooks
     |     |     | useHomeFetch.js
-    |     |     | useMovieFetc.js
+    |     |     | useMovieFetch.js
     |     |
     |     |_____images
     |     |     | movie-logo.svg
