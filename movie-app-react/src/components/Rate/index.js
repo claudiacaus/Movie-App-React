@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 // the callback function is passed to the component as a prop and is called when the user clicks Rate
 const Rate = ({ callback }) => {
-  const [value, setValue] = useState(5);
+  const [value, setValue] = useState('');
 
   return (
     <div>
@@ -14,9 +14,11 @@ const Rate = ({ callback }) => {
         onChange={(e) => setValue(e.currentTarget.value)}
       />
       {value}
+
       <p>
         <button onClick={() => callback(value)}>Rate</button>
       </p>
+      {useState && <p>Rate: {`${value}`} </p>}
     </div>
   );
 };

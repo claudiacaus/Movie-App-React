@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import PropTypes from 'prop-types';
 import API from '../../API';
+import PropTypes from 'prop-types';
 // Components
 import Thumb from '../Thumb';
 import Rate from '../Rate';
@@ -17,7 +17,7 @@ const MovieInfo = ({ movie }) => {
   const [user] = useContext(Context);
 
   const handleRating = async (value) => {
-    const rate = await API.rateMovie(user.session_id, movie.id, value);
+    const rate = await API.rateMovie(user.sessionId, movie.id, value);
     console.log(rate);
   };
 
@@ -49,7 +49,6 @@ const MovieInfo = ({ movie }) => {
               ))}
             </div>
           </div>
-
           {user && (
             <div>
               <p>Rate this movie!</p>
