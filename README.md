@@ -11,6 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Online Deployment of this project is available at https://movie-time-react-project.netlify.app
 
+<img src="https://user-images.githubusercontent.com/55986532/143091393-0aca157c-814b-408f-b8a8-37a52ec9384c.png" alt ="movie time in iphone frame" width="500px"/>
+
+
 ## Getting Started :clapper:
 
 To get started you can simply clone the repo and install the dependencies in the root folder, it's necessary to create a .env file in the root and add your personal API key for the [TMDB](https://www.themoviedb.org/).
