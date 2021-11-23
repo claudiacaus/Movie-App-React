@@ -15,7 +15,7 @@ Online Deployment of this project is available at https://movie-time-react-proje
 
 To get started you can simply clone the repo and install the dependencies in the root folder, it's necessary to create a .env file in the root and add your personal API key for the [TMDB](https://www.themoviedb.org/).
 
-In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
+In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`
 
 | Steps   |with [NPM](https://www.npmjs.com/) |
 | ------- | --------------------------------- | 
@@ -23,10 +23,14 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
 | Start   |`npm start`                        |
 | Tests   |`npm test`                         |
 
+## Login 
+username: `user_admin` <br>
+password: `hackyourfuture`
+
 ## Directory Layout and Tree :film_strip:
 
 ```
-.
+._______________________________________________________________
 |_ README.md
 |_ movie-app-react
     |  .gitignore
@@ -36,38 +40,53 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
     |
     |_____public
     |     | index.html
+    |     | _redirects
+    |     | favicon.ico
+    |     | manifext.json
+    |     | robots.txt
+    |     |
     |_____src
-          | setupTests.js
-          | index.js
-          | App.js
-          |
-          |_____components
-          |     | 
-          |     | 
-          |     | 
-          |     | 
-          |
-          |_____context
-          |     | 
-          |     | 
-          |
-          |_____hooks
-          |     | 
-          |     | 
-          |     | 
-          |
-          |_____images
-          |     | 
-          |     | 
-          |     
-          |_____style
-          |     | 
-          |     | 
-          |     | 
-          |
-          |_______tests__
-          |     | 
-          |     | 
+    |     | setupTests.js
+    |     | index.js
+    |     | App.js
+    |     | API.js
+    |     | config.js
+    |     | context.js
+    |     | GlobalStyle.js
+    |     | helpers.js
+    |     |
+    |     |_____components
+    |     |     | Actor
+    |     |     | BreadCrumb
+    |     |     | Button
+    |     |     | Grid
+    |     |     | Header
+    |     |     | HeroImage
+    |     |     | MovieInfo
+    |     |     | MovieInfoBar
+    |     |     | Rate
+    |     |     | SearchBar
+    |     |     | Spinner
+    |     |     | Thumb
+    |     |     | Home.js
+    |     |     | Home.styles.js
+    |     |     | Login.js
+    |     |     | Login.styles.js
+    |     |     | Movie.js
+    |     |     | NotFound.js
+    |     |
+    |     |_____hooks
+    |     |     | useHomeFetch.js
+    |     |     | useMovieFetc.js
+    |     |
+    |     |_____images
+    |     |     | movie-logo.svg
+    |     |     | no_image.jpg
+    |     |     | not-found.gif
+    |     |     | search-icon.svg
+    |     |     | tmdb_logo.svg
+    |___________________________________________________________     
+         
        
  ```
  
@@ -97,12 +116,12 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`.
 - [x] The app needs to have multiple pages and use client-side routing
 - [x] The app should make use of the Context API or use custom hooks
 - [x] Make use of an API
-- [ ] User login
+- [x] User login
 - [x] Search form 
 - [x] Full responsive 
 - [x] Implemented mobile first
 ### Nice to have
-- [ ] Add user review
+- [x] Add user review
 - [ ] Tests for the UI
 
 
