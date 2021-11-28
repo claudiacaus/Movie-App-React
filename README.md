@@ -26,9 +26,6 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`
 | Start   |`npm start`                        |
 | Tests   |`npm test`                         |
 
-## Login 
-username: `user_admin` <br>
-password: `hackyourfuture`
 
 ## Directory Layout and Tree :film_strip:
 
