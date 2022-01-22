@@ -1,17 +1,25 @@
 # Movie-App-React :film_projector:
 React project for the HackYourFuture - Amsterdam Bootcamp
 
+## Demo :computer:
+
+Online Deployment of this project is available at https://movie-time-react-project.netlify.app
+
+![Macbook](https://user-images.githubusercontent.com/55986532/150647980-fc17d38e-32a6-4fc0-8983-a4a19ba13c23.png)
+![iPhone](https://user-images.githubusercontent.com/55986532/150647985-4fc3be06-c790-40d3-ace5-dddb5d24f9f0.png)
+
+
+## Inspiration
+
 ![inspiraton](https://user-images.githubusercontent.com/55986532/142338736-baa8adda-f193-49c7-af2e-7af390290fa2.png)
 
 Inspired by [Arshia Amin Javahery](https://dribbble.com/shots/16852940/attachments/11913684?mode=media) 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Demo :computer:
 
-Online Deployment of this project is available at https://movie-time-react-project.netlify.app
 
-<img src="https://user-images.githubusercontent.com/55986532/143091393-0aca157c-814b-408f-b8a8-37a52ec9384c.png" alt ="movie time in iphone frame" width="500px"/>
+
 
 
 ## Getting Started :clapper:
