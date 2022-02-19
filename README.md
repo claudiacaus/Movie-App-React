@@ -4,8 +4,7 @@ React project for the HackYourFuture - Amsterdam Bootcamp
 ## Demo :computer:
 
 Online Deployment of this project is available at https://movie-time-react-project.netlify.app
-
-![Macbook](https://user-images.githubusercontent.com/55986532/150647980-fc17d38e-32a6-4fc0-8983-a4a19ba13c23.png)
+![3](https://user-images.githubusercontent.com/55986532/154819995-e6a7e5cc-c66f-448d-a17b-067ac0d5d398.png)
 ![iPhone](https://user-images.githubusercontent.com/55986532/150647985-4fc3be06-c790-40d3-ace5-dddb5d24f9f0.png)
 
 
@@ -130,6 +129,5 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`
 - [x] Implemented mobile first
 ### Nice to have
 - [x] Add user review
-- [ ] Tests for the UI
 
 
