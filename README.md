@@ -130,4 +130,9 @@ In the `.env` file add the variable: `REACT_APP_API_KEY={your API key}`
 ### Nice to have
 - [x] Add user review
 
+![made-with-react](https://user-images.githubusercontent.com/55986532/155529745-869a2279-fe2f-4b44-ac6c-e701b24df241.svg)
+![made-with-javascript](https://user-images.githubusercontent.com/55986532/155529759-ef8afb4e-bbeb-4143-b516-659deb252f3b.svg)
+![made-with-styled-components](https://user-images.githubusercontent.com/55986532/155529786-cd8da822-cb14-4cde-bbe4-22ab56025ffa.svg)
+![made-with-tmdb-api](https://user-images.githubusercontent.com/55986532/155529843-32e42b44-a2c9-41e8-be7e-e01bc6cf28bd.svg)
+![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
 
